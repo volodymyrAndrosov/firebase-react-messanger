@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import PrivateRouteList from "../PrivateRouteList/PrivateRouteList";
 import PublicRouteList from "../PublicRouteList/PublicRouteList";
+import { Context } from "../../index";
+import { useAuthState } from "react-firebase-hooks/auth";
 
 const AppRouter = () => {
-    const isUser = true;
+    const { auth } = useContext(Context);
+    const [user] = useAuthState(auth);
 
-    return <div>{isUser ? <PrivateRouteList /> : <PublicRouteList />} </div>;
+    return <div>{user ? <PrivateRouteList /> : <PublicRouteList />}</div>;
 };
 
 export default AppRouter;

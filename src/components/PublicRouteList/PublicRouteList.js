@@ -9,7 +9,7 @@ const PublicRouteList = () => {
             {publicRoutes.map((publicRoute) => {
                 const { path, Component } = publicRoute;
 
-                return <Route path={path} element={<Component />} exact />;
+                return <Route key={path} path={path} element={<Component />} exact />;
             })}
             {/* 👇️ only match this when no other routes match */}
             <Route path="*" element={<Navigate replace to={LOGIN_ROUTE} />} />

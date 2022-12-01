@@ -9,7 +9,7 @@ const PrivateRouteList = () => {
             {privateRoutes.map((privateRoute) => {
                 const { path, Component } = privateRoute;
 
-                return <Route path={path} element={<Component />} exact />;
+                return <Route key={path} path={path} element={<Component />} exact />;
             })}
             {/* 👇️ only match this when no other routes match */}
             <Route path="*" element={<Navigate replace to={CHAT_ROUTE} />} />
