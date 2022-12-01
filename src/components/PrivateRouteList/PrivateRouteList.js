@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Navigate, Route } from "react-router-dom";
 import { privateRoutes } from "../../routes/configRoutes";
-import { CHAT_ROUTE } from "../../utils/consts";
+import { CHAT_ROUTE } from "../../utils/routeKeys";
 
 const PrivateRouteList = () => {
     return (

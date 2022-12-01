@@ -1,7 +1,7 @@
 import React from "react";
 import { Routes, Navigate, Route } from "react-router-dom";
 import { publicRoutes } from "../../routes/configRoutes";
-import { LOGIN_ROUTE } from "../../utils/consts";
+import { LOGIN_ROUTE } from "../../utils/routeKeys";
 
 const PublicRouteList = () => {
     return (

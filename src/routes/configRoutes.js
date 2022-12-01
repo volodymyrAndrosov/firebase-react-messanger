@@ -1,5 +1,5 @@
-import { LOGIN_ROUTE } from "../utils/consts";
-import { CHAT_ROUTE } from "../utils/consts";
+import { LOGIN_ROUTE } from "../utils/routeKeys";
+import { CHAT_ROUTE } from "../utils/routeKeys";
 
 import LoginPage from '../pages/LoginPage/LoginPage';
 import ChatPage from '../pages/ChatPage/ChatPage';
